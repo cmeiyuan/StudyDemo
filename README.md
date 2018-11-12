@@ -1,2 +1,2 @@
-# StudyDemo
-Just for personal study.
+## ArscEditor
+A tool for editing resources.arsc file.

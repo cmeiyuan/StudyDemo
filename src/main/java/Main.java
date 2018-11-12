@@ -1,11 +1,26 @@
 import com.cmy.sort.ISort;
-import com.cmy.sort.InsertSort;
+
+import java.util.Calendar;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = new int[]{5, 23, 11, 89, 3, 45, 189, 35, 8, 56};
-        sort(array, new InsertSort());
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        System.out.println(year);
+        System.out.println(month);
+
+        calendar = Calendar.getInstance();
+        calendar.add(Calendar.MONTH, -2);
+        year = calendar.get(Calendar.YEAR);
+        month = calendar.get(Calendar.MONTH);
+
+        System.out.println(year);
+        System.out.println(month);
+
     }
 
     public static void sort(int[] array, ISort sort) {
